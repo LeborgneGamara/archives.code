@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Day 2 bonus</title>
+        <style>
+            .titre {
+                font-size:14px;
+            }
+        </style>
+        <script>
+
+            function log(v) {
+                console.log(v);
+            }
+
+            function start() {
+                var tableau = [10, 4, 'salut', null, undefined, {nom: 'toto'}, false, true, 'yoooo', 'titi', 55555555];
+                log(tableau);
+//                log(tableau[0]);
+//                log(tableau[tableau.length - 1]);
+
+                function everyCases(t) {
+                    var i;
+                    
+                    for (i = 0; i < t.length; i += 1) {
+//                        log(i);
+                        log(t[i]);
+                    }
+                }
+                
+                everyCases(tableau);
+            }
+
+        </script>
+    </head>
+    <body onload="start();">
+        <h1 id="titre1" class="titre" style="color:blue;">Day 2 bonus</h1>
+
+    </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Day 2</title>
+        <style>
+            .titre {
+                font-size:14px;
+            }
+        </style>
+        <script>
+            
+            function log(v) {
+                console.log(v);
+            }
+            
+            function start() {
+
+                log('hello world');
+       
+                var compteur = 0;
+
+                var btn1 = document.getElementById('action1');
+                var btn2 = document.getElementById('action2');
+                var btn3 = document.getElementById('action3');
+                var btn4 = document.getElementById('action4');
+                var titre1 = document.getElementById('titre1');
+                var res = document.getElementById('resultat');
+                
+                //direBonjour('Max');
+//                addition(2);
+                
+                btn1.onclick = augmenter;
+                btn2.onclick = reset;
+                btn3.onclick = changerCouleur;
+                btn4.onclick = direBonjour;
+
+                function reset () {
+
+                    compteur = 0;
+                    console.log(compteur);
+                    changerCouleur();
+                    titre1.style.color = 'blue';
+                };
+
+                function changerCouleur() {
+
+                    titre1.style.color = 'green';
+
+                };
+
+                function augmenter() {
+
+                    compteur = compteur + 10;
+                    log(compteur);
+                    addition(10);
+                };
+
+                function direBonjour(nom) {
+                    res.innerHTML = 'bonjour ' + nom;
+                }
+                
+                function addition(valeur) {
+                    res.innerHTML = compteur + valeur;
+                }
+            }
+
+        </script>
+    </head>
+    <body onload="start();">
+        <h1 id="titre1" class="titre" style="color:blue;">Day 2</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam non quibusdam delectus, sunt soluta obcaecati. Dicta, nulla delectus. Asperiores deserunt consequatur earum alias, voluptas laboriosam! Expedita id omnis officiis odit.
+        </p>
+        <button id="action1">compter</button>
+        <button id="action2">reset</button>
+        <button id="action3">changer couleur titre</button>
+        <button id="action4">dire bonjour</button>
+        <h2 class="titre">Un autre titre</h2>
+        <div id="resultat"></div>
+    </body>
+</html>
