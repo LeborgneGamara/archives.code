@@ -1,0 +1,51 @@
+body, a{font-family: 'Slabo 27px', serif;
+
+}
+
+h1 {font-family: 'Warnes', cursive;
+
+}
+
+p {font-family: 'Griffy', cursive;
+
+}
+
+#carroussel{
+  max-width:206px;
+}
+#carroussel img{
+  display: block;
+  max-width:inherit;
+}
+
+p {
+  font-size: 1.5em;
+  color: #FE7F88;
+  background-color: transparent;
+  background-image: none;
+}
+
+body {
+  background-image: url("http://graphicdesignjunction.com/wp-content/uploads/2014/05/004+background+pattern+designs.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#menu{
+  list-style: none;
+  display: flex;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: .3rem;
+  height: 40px;
+  line-height: 40px;
+}
+
+#menu a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
+}
+
+#menu a:hover {
+  color: #FE7F88;
+}

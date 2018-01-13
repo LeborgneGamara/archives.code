@@ -1,0 +1,67 @@
+* {
+	box-sizing: border-box;
+	
+}
+
+body {
+	padding: 60px;
+	background: #850606;
+}
+
+div {
+	background: #791CF8;
+	height: 80px;
+	margin-bottom: 5px;
+}
+
+#branding_header {
+	width:75%;
+	float: left;
+}
+
+#secure_page {
+	width:20%;
+	float: right;
+}
+
+#global_navigation {
+	clear: both;
+}
+
+#secondary_navigation {
+	width:20%;
+	float:left;
+	height:500px;
+
+}
+
+#main {
+	width:75%;
+	float:right;
+	clear: both;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
